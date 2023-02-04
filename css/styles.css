@@ -152,6 +152,12 @@ body {
 
 .hero-section {
   background-color: var(--primary-bg-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -271,6 +277,13 @@ body {
   letter-spacing: 0.02em;
 }
 
+/*Section 4*/
+
+.customers-logo-icon {
+  display: flex;
+  width: 41px;
+  height: 46.97px;
+}
 /*Filters*/
 
 .section {
