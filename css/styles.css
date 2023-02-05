@@ -332,6 +332,19 @@ body {
   width: 168px;
   height: 88px;
 }
+.customers-logo:hover,
+.customer-logo:focus {
+  border-color: var(--accent-bg-color);
+}
+
+.customer-logo-icon {
+  fill: #8e8f99;
+}
+
+.customer-logo-icon:hover,
+.customer-logo-icon:focus {
+  fill: var(--accent-bg-color);
+}
 
 /*Filters*/
 
