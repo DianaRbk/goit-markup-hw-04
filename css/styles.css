@@ -22,6 +22,7 @@
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -199,16 +200,16 @@ body {
   flex-basis: calc(100% / 4);
 }
 
-.advantage-icon {
+.advantage-box {
   background-color: var(--button-section-bg-color);
   border-radius: 4px;
   height: 112px;
   max-width: 264px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.advantage-icon-picture {
-  margin-top: 24px;
-  margin-left: 100px;
-}
+
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -285,6 +286,28 @@ body {
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.social-networks-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-network-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--order-button-bg-color);
+}
+.social-network-link:hover,
+.social-network-link:focus {
+  background-color: var(--accent-bg-color);
 }
 
 /*Section 4*/
@@ -294,22 +317,20 @@ body {
   padding-left: 156px;
   padding-right: 156px;
 }
-.customers {
+.customers-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
 .customers-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   border: 1px #8e8f99 solid;
   width: 168px;
   height: 88px;
-}
-
-.customers-logo-icon {
-  padding-top: 16px;
-  padding-left: 32px;
 }
 
 /*Filters*/
@@ -366,6 +387,11 @@ body {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
+.projects-list-items:hover {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .project-card {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -400,6 +426,11 @@ body {
   padding-bottom: 100px;
 }
 
+.footer-list {
+  display: flex;
+  gap: 120px;
+}
+
 .footer-logo {
   color: var(--footer-txt-color);
 }
@@ -410,4 +441,27 @@ body {
   color: var(--second-footer-txt-color);
   margin-top: 16px;
   max-width: 264px;
+}
+
+.footer-social-media {
+  font-weight: 500;
+  color: var(--tertiary-txt-color);
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-social-network-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-network-link:hover,
+.footer-social-network-link:focus {
+  background-color: rgba(49, 208, 170, 1);
 }
