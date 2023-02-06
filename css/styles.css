@@ -162,6 +162,8 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .service-btn {
@@ -324,26 +326,24 @@ body {
 }
 
 .customers-logo {
+  width: 168px;
+  height: 88px;
+}
+
+.customer-logo-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   border: 1px #8e8f99 solid;
-  width: 168px;
-  height: 88px;
-}
-.customers-logo:hover,
-.customer-logo:focus {
-  border-color: var(--accent-bg-color);
-}
-
-.customer-logo-icon {
   fill: #8e8f99;
+  height: inherit;
 }
 
 .customer-logo-icon:hover,
 .customer-logo-icon:focus {
   fill: var(--accent-bg-color);
+  border-color: var(--accent-bg-color);
 }
 
 /*Filters*/
@@ -396,11 +396,11 @@ body {
   margin: 0px;
 }
 
-.projects-list-items {
+.project-link {
+  display: block;
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
-
-.projects-list-items:hover {
+.project-link:hover {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
